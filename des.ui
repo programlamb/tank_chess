@@ -74,8 +74,24 @@
                <property name="sizeConstraint">
                 <enum>QLayout::SetMaximumSize</enum>
                </property>
-               <item row="9" column="15">
-                <widget class="QPushButton" name="pb_p7">
+               <item row="4" column="11">
+                <widget class="QPushButton" name="pb_l12">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="9" column="11">
+                <widget class="QPushButton" name="pb_l7">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -90,8 +106,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="6" column="1">
-                <widget class="QPushButton" name="pb_b10">
+               <item row="10" column="0">
+                <widget class="QPushButton" name="pb_a6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -106,8 +122,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="4">
-                <widget class="QPushButton" name="pb_e3">
+               <item row="0" column="4">
+                <widget class="QPushButton" name="pb_e16">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -115,7 +131,119 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>0503b</string>
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="4" column="5">
+                <widget class="QPushButton" name="pb_f12">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="13" column="12">
+                <widget class="QPushButton" name="pb_m3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>1303w11</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QPushButton" name="pb_a10">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="12" column="2">
+                <widget class="QPushButton" name="pb_c4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <widget class="QPushButton" name="pb_d14">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="5" column="5">
+                <widget class="QPushButton" name="pb_f11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="7" column="15">
+                <widget class="QPushButton" name="pb_p9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -124,6 +252,22 @@
                </item>
                <item row="7" column="2">
                 <widget class="QPushButton" name="pb_c9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="12" column="5">
+                <widget class="QPushButton" name="pb_f4">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -154,10 +298,58 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="5">
-                <widget class="QPushButton" name="pb_f4">
+               <item row="6" column="1">
+                <widget class="QPushButton" name="pb_b10">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="9" column="15">
+                <widget class="QPushButton" name="pb_p7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="13" column="4">
+                <widget class="QPushButton" name="pb_e3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>0503b00</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="0" column="6">
+                <widget class="QPushButton" name="pb_g16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
@@ -202,22 +394,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="0" column="6">
-                <widget class="QPushButton" name="pb_g16">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="13" column="5">
                 <widget class="QPushButton" name="pb_f3">
                  <property name="sizePolicy">
@@ -228,182 +404,6 @@
                  </property>
                  <property name="text">
                   <string>0603w11</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="4" column="11">
-                <widget class="QPushButton" name="pb_l12">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="4" column="5">
-                <widget class="QPushButton" name="pb_f12">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="0" column="4">
-                <widget class="QPushButton" name="pb_e16">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="9" column="11">
-                <widget class="QPushButton" name="pb_l7">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="10" column="0">
-                <widget class="QPushButton" name="pb_a6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="5" column="5">
-                <widget class="QPushButton" name="pb_f11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="13" column="12">
-                <widget class="QPushButton" name="pb_m3">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>1303w11</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="12" column="2">
-                <widget class="QPushButton" name="pb_c4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="7" column="15">
-                <widget class="QPushButton" name="pb_p9">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="6" column="0">
-                <widget class="QPushButton" name="pb_a10">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="3">
-                <widget class="QPushButton" name="pb_d14">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -426,8 +426,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="10" column="3">
-                <widget class="QPushButton" name="pb_d6">
+               <item row="2" column="1">
+                <widget class="QPushButton" name="pb_b14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -442,8 +442,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="2" column="1">
-                <widget class="QPushButton" name="pb_b14">
+               <item row="10" column="3">
+                <widget class="QPushButton" name="pb_d6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -490,70 +490,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="0" column="13">
-                <widget class="QPushButton" name="pb_n16">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="11" column="13">
-                <widget class="QPushButton" name="pb_n5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="7" column="10">
-                <widget class="QPushButton" name="pb_k9">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="5" column="0">
-                <widget class="QPushButton" name="pb_a11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="7" column="0">
                 <widget class="QPushButton" name="pb_a9">
                  <property name="sizePolicy">
@@ -586,8 +522,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="8" column="6">
-                <widget class="QPushButton" name="pb_g8">
+               <item row="7" column="10">
+                <widget class="QPushButton" name="pb_k9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -602,8 +538,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="9" column="0">
-                <widget class="QPushButton" name="pb_a7">
+               <item row="11" column="13">
+                <widget class="QPushButton" name="pb_n5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -618,8 +554,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="9" column="13">
-                <widget class="QPushButton" name="pb_n7">
+               <item row="0" column="13">
+                <widget class="QPushButton" name="pb_n16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QPushButton" name="pb_a11">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -650,6 +602,54 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="8" column="6">
+                <widget class="QPushButton" name="pb_g8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="9" column="13">
+                <widget class="QPushButton" name="pb_n7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="9" column="0">
+                <widget class="QPushButton" name="pb_a7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="2" column="11">
                 <widget class="QPushButton" name="pb_l14">
                  <property name="sizePolicy">
@@ -666,8 +666,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="8">
-                <widget class="QPushButton" name="pb_i3">
+               <item row="8" column="1">
+                <widget class="QPushButton" name="pb_b8">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -682,8 +682,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="2" column="4">
-                <widget class="QPushButton" name="pb_e14">
+               <item row="13" column="8">
+                <widget class="QPushButton" name="pb_i3">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -730,72 +730,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="8" column="1">
-                <widget class="QPushButton" name="pb_b8">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="8" column="13">
-                <widget class="QPushButton" name="pb_n8">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="11" column="10">
-                <widget class="QPushButton" name="pb_k5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QPushButton" name="pb_a16">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="11" column="15">
-                <widget class="QPushButton" name="pb_p5">
+               <item row="2" column="4">
+                <widget class="QPushButton" name="pb_e14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -826,6 +762,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="11" column="10">
+                <widget class="QPushButton" name="pb_k5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="15" column="4">
                 <widget class="QPushButton" name="pb_e1">
                  <property name="sizePolicy">
@@ -842,8 +794,40 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="11" column="2">
-                <widget class="QPushButton" name="pb_c5">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="pb_a16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="8" column="13">
+                <widget class="QPushButton" name="pb_n8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="11" column="15">
+                <widget class="QPushButton" name="pb_p5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -874,8 +858,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="7" column="6">
-                <widget class="QPushButton" name="pb_g9">
+               <item row="13" column="10">
+                <widget class="QPushButton" name="pb_k3">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -883,7 +867,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>1103b00</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -906,8 +890,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="10">
-                <widget class="QPushButton" name="pb_k3">
+               <item row="11" column="2">
+                <widget class="QPushButton" name="pb_c5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -915,7 +899,23 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>1103b</string>
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="7" column="6">
+                <widget class="QPushButton" name="pb_g9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -954,22 +954,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="8">
-                <widget class="QPushButton" name="pb_i12">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="8" column="4">
                 <widget class="QPushButton" name="pb_e8">
                  <property name="sizePolicy">
@@ -1002,6 +986,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="4" column="8">
+                <widget class="QPushButton" name="pb_i12">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="6" column="10">
                 <widget class="QPushButton" name="pb_k10">
                  <property name="sizePolicy">
@@ -1018,8 +1018,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="1">
-                <widget class="QPushButton" name="pb_b12">
+               <item row="7" column="8">
+                <widget class="QPushButton" name="pb_i9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1050,8 +1050,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="7" column="8">
-                <widget class="QPushButton" name="pb_i9">
+               <item row="4" column="1">
+                <widget class="QPushButton" name="pb_b12">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1059,7 +1059,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -1098,40 +1098,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="0">
-                <widget class="QPushButton" name="pb_a4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="11" column="5">
                 <widget class="QPushButton" name="pb_f5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="9" column="2">
-                <widget class="QPushButton" name="pb_c7">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1162,8 +1130,72 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="9" column="2">
+                <widget class="QPushButton" name="pb_c7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="12" column="0">
+                <widget class="QPushButton" name="pb_a4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="5" column="10">
                 <widget class="QPushButton" name="pb_k11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="1" column="13">
+                <widget class="QPushButton" name="pb_n15">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="3" column="8">
+                <widget class="QPushButton" name="pb_i13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1210,56 +1242,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="8">
-                <widget class="QPushButton" name="pb_i13">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="1" column="1">
                 <widget class="QPushButton" name="pb_b15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="13">
-                <widget class="QPushButton" name="pb_n15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="7">
-                <widget class="QPushButton" name="pb_h15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1290,8 +1274,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="2">
-                <widget class="QPushButton" name="pb_c13">
+               <item row="15" column="6">
+                <widget class="QPushButton" name="pb_g1">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1322,22 +1306,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="15" column="6">
-                <widget class="QPushButton" name="pb_g1">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="6" column="4">
                 <widget class="QPushButton" name="pb_e10">
                  <property name="sizePolicy">
@@ -1354,8 +1322,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="1">
-                <widget class="QPushButton" name="pb_b3">
+               <item row="3" column="2">
+                <widget class="QPushButton" name="pb_c13">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="1" column="7">
+                <widget class="QPushButton" name="pb_h15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1372,6 +1356,38 @@
                </item>
                <item row="14" column="0">
                 <widget class="QPushButton" name="pb_a2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="13" column="14">
+                <widget class="QPushButton" name="pb_o3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>1503b00</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="13" column="1">
+                <widget class="QPushButton" name="pb_b3">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1412,22 +1428,6 @@
                  </property>
                  <property name="text">
                   <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="13" column="14">
-                <widget class="QPushButton" name="pb_o3">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>1503b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -1514,6 +1514,38 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="14" column="10">
+                <widget class="QPushButton" name="pb_k2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>1102b00</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="14" column="12">
+                <widget class="QPushButton" name="pb_m2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="3" column="15">
                 <widget class="QPushButton" name="pb_p13">
                  <property name="sizePolicy">
@@ -1546,104 +1578,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="14" column="12">
-                <widget class="QPushButton" name="pb_m2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="14" column="10">
-                <widget class="QPushButton" name="pb_k2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>1102b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="5" column="7">
-                <widget class="QPushButton" name="pb_h11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="9">
-                <widget class="QPushButton" name="pb_j15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="10">
-                <widget class="QPushButton" name="pb_k14">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="5" column="15">
                 <widget class="QPushButton" name="pb_p11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="5" column="14">
-                <widget class="QPushButton" name="pb_o11">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1674,8 +1610,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="5" column="1">
-                <widget class="QPushButton" name="pb_b11">
+               <item row="2" column="10">
+                <widget class="QPushButton" name="pb_k14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1690,8 +1626,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="6" column="12">
-                <widget class="QPushButton" name="pb_m10">
+               <item row="1" column="9">
+                <widget class="QPushButton" name="pb_j15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1706,8 +1642,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="9" column="3">
-                <widget class="QPushButton" name="pb_d7">
+               <item row="5" column="7">
+                <widget class="QPushButton" name="pb_h11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="5" column="14">
+                <widget class="QPushButton" name="pb_o11">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1738,6 +1690,38 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="5" column="1">
+                <widget class="QPushButton" name="pb_b11">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="9" column="3">
+                <widget class="QPushButton" name="pb_d7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="0" column="10">
                 <widget class="QPushButton" name="pb_k16">
                  <property name="sizePolicy">
@@ -1754,8 +1738,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="13">
-                <widget class="QPushButton" name="pb_n4">
+               <item row="6" column="12">
+                <widget class="QPushButton" name="pb_m10">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1764,22 +1748,6 @@
                  </property>
                  <property name="text">
                   <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="15" column="7">
-                <widget class="QPushButton" name="pb_h1">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>0801w41</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -1834,8 +1802,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="10" column="13">
-                <widget class="QPushButton" name="pb_n6">
+               <item row="15" column="7">
+                <widget class="QPushButton" name="pb_h1">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1843,15 +1811,15 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>0801w41</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="3">
-                <widget class="QPushButton" name="pb_d12">
+               <item row="12" column="13">
+                <widget class="QPushButton" name="pb_n4">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1882,8 +1850,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="1" column="4">
-                <widget class="QPushButton" name="pb_e15">
+               <item row="12" column="11">
+                <widget class="QPushButton" name="pb_l4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="10" column="13">
+                <widget class="QPushButton" name="pb_n6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1914,8 +1898,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="11">
-                <widget class="QPushButton" name="pb_l4">
+               <item row="4" column="3">
+                <widget class="QPushButton" name="pb_d12">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1930,8 +1914,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="7" column="3">
-                <widget class="QPushButton" name="pb_d9">
+               <item row="1" column="4">
+                <widget class="QPushButton" name="pb_e15">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="3" column="11">
+                <widget class="QPushButton" name="pb_l13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -1994,8 +1994,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="11">
-                <widget class="QPushButton" name="pb_l13">
+               <item row="7" column="3">
+                <widget class="QPushButton" name="pb_d9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2012,6 +2012,38 @@
                </item>
                <item row="15" column="8">
                 <widget class="QPushButton" name="pb_i1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="2" column="6">
+                <widget class="QPushButton" name="pb_g14">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="5" column="6">
+                <widget class="QPushButton" name="pb_g11">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2058,40 +2090,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="5" column="6">
-                <widget class="QPushButton" name="pb_g11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="6">
-                <widget class="QPushButton" name="pb_g14">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="10" column="9">
-                <widget class="QPushButton" name="pb_j6">
+               <item row="11" column="12">
+                <widget class="QPushButton" name="pb_m5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2122,8 +2122,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="11" column="12">
-                <widget class="QPushButton" name="pb_m5">
+               <item row="15" column="11">
+                <widget class="QPushButton" name="pb_l1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="10" column="9">
+                <widget class="QPushButton" name="pb_j6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2154,72 +2170,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="15" column="11">
-                <widget class="QPushButton" name="pb_l1">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="6" column="6">
                 <widget class="QPushButton" name="pb_g10">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="3" column="6">
-                <widget class="QPushButton" name="pb_g13">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="13" column="13">
-                <widget class="QPushButton" name="pb_n3">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="9" column="8">
-                <widget class="QPushButton" name="pb_i7">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2250,6 +2202,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="13" column="13">
+                <widget class="QPushButton" name="pb_n3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="14" column="9">
                 <widget class="QPushButton" name="pb_j2">
                  <property name="sizePolicy">
@@ -2266,8 +2234,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="6">
-                <widget class="QPushButton" name="pb_g4">
+               <item row="9" column="8">
+                <widget class="QPushButton" name="pb_i7">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2282,8 +2250,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="9" column="4">
-                <widget class="QPushButton" name="pb_e7">
+               <item row="3" column="6">
+                <widget class="QPushButton" name="pb_g13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2291,7 +2259,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>b</string>
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -2330,6 +2298,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="9" column="4">
+                <widget class="QPushButton" name="pb_e7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="14" column="15">
                 <widget class="QPushButton" name="pb_p2">
                  <property name="sizePolicy">
@@ -2346,8 +2330,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="7" column="14">
-                <widget class="QPushButton" name="pb_o9">
+               <item row="12" column="6">
+                <widget class="QPushButton" name="pb_g4">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2378,8 +2362,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="14" column="1">
-                <widget class="QPushButton" name="pb_b2">
+               <item row="0" column="11">
+                <widget class="QPushButton" name="pb_l16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="7" column="14">
+                <widget class="QPushButton" name="pb_o9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2410,8 +2410,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="14">
-                <widget class="QPushButton" name="pb_o13">
+               <item row="14" column="1">
+                <widget class="QPushButton" name="pb_b2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2426,8 +2426,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="0" column="11">
-                <widget class="QPushButton" name="pb_l16">
+               <item row="3" column="14">
+                <widget class="QPushButton" name="pb_o13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2474,22 +2474,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="8" column="2">
-                <widget class="QPushButton" name="pb_c8">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="7" column="1">
                 <widget class="QPushButton" name="pb_b9">
                  <property name="sizePolicy">
@@ -2522,24 +2506,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="3">
-                <widget class="QPushButton" name="pb_d3">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>0403b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="14" column="13">
-                <widget class="QPushButton" name="pb_n2">
+               <item row="8" column="2">
+                <widget class="QPushButton" name="pb_c8">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2586,8 +2554,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="13">
-                <widget class="QPushButton" name="pb_n13">
+               <item row="13" column="3">
+                <widget class="QPushButton" name="pb_d3">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2595,7 +2563,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>0403b00</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -2620,6 +2588,22 @@
                </item>
                <item row="15" column="15">
                 <widget class="QPushButton" name="pb_p1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="3" column="13">
+                <widget class="QPushButton" name="pb_n13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2682,6 +2666,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="1" column="11">
+                <widget class="QPushButton" name="pb_l15">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="8" column="7">
                 <widget class="QPushButton" name="pb_h8">
                  <property name="sizePolicy">
@@ -2700,22 +2700,6 @@
                </item>
                <item row="10" column="15">
                 <widget class="QPushButton" name="pb_p6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="11">
-                <widget class="QPushButton" name="pb_l15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2762,8 +2746,24 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="0" column="5">
-                <widget class="QPushButton" name="pb_f16">
+               <item row="15" column="3">
+                <widget class="QPushButton" name="pb_d1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="14" column="6">
+                <widget class="QPushButton" name="pb_g2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2790,31 +2790,15 @@
                   <string notr="true"/>
                  </property>
                  <property name="text">
-                  <string>0101b</string>
+                  <string>0101b00</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
                  </attribute>
                 </widget>
                </item>
-               <item row="14" column="6">
-                <widget class="QPushButton" name="pb_g2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="15" column="3">
-                <widget class="QPushButton" name="pb_d1">
+               <item row="0" column="5">
+                <widget class="QPushButton" name="pb_f16">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2847,22 +2831,6 @@
                </item>
                <item row="11" column="4">
                 <widget class="QPushButton" name="pb_e5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="7">
-                <widget class="QPushButton" name="pb_h14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2925,24 +2893,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="3" column="0">
-                <widget class="QPushButton" name="pb_a13">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="5">
-                <widget class="QPushButton" name="pb_f14">
+               <item row="2" column="7">
+                <widget class="QPushButton" name="pb_h14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -2959,6 +2911,22 @@
                </item>
                <item row="13" column="0">
                 <widget class="QPushButton" name="pb_a3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="2" column="5">
+                <widget class="QPushButton" name="pb_f14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3005,56 +2973,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="13">
-                <widget class="QPushButton" name="pb_n12">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="7" column="11">
-                <widget class="QPushButton" name="pb_l9">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="8" column="15">
-                <widget class="QPushButton" name="pb_p8">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="14">
-                <widget class="QPushButton" name="pb_o15">
+               <item row="3" column="0">
+                <widget class="QPushButton" name="pb_a13">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3087,6 +3007,86 @@
                </item>
                <item row="10" column="5">
                 <widget class="QPushButton" name="pb_f6">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="7" column="11">
+                <widget class="QPushButton" name="pb_l9">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="1" column="14">
+                <widget class="QPushButton" name="pb_o15">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="8" column="15">
+                <widget class="QPushButton" name="pb_p8">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="4" column="13">
+                <widget class="QPushButton" name="pb_n12">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="10" column="1">
+                <widget class="QPushButton" name="pb_b6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3165,40 +3165,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="10" column="1">
-                <widget class="QPushButton" name="pb_b6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="1" column="10">
                 <widget class="QPushButton" name="pb_k15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="11" column="7">
-                <widget class="QPushButton" name="pb_h5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3229,6 +3197,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="11" column="7">
+                <widget class="QPushButton" name="pb_h5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="14" column="14">
                 <widget class="QPushButton" name="pb_o2">
                  <property name="sizePolicy">
@@ -3238,7 +3222,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>1502b</string>
+                  <string>1502b00</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3261,6 +3245,22 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="13" column="11">
+                <widget class="QPushButton" name="pb_l3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>1203b00</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="6" column="11">
                 <widget class="QPushButton" name="pb_l10">
                  <property name="sizePolicy">
@@ -3271,22 +3271,6 @@
                  </property>
                  <property name="text">
                   <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="4" column="10">
-                <widget class="QPushButton" name="pb_k12">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3341,8 +3325,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="11">
-                <widget class="QPushButton" name="pb_l3">
+               <item row="4" column="10">
+                <widget class="QPushButton" name="pb_k12">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3350,23 +3334,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>1203b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="10" column="14">
-                <widget class="QPushButton" name="pb_o6">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3398,23 +3366,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>1202b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="8">
-                <widget class="QPushButton" name="pb_i15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>1202b00</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3437,8 +3389,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="4">
-                <widget class="QPushButton" name="pb_e12">
+               <item row="1" column="8">
+                <widget class="QPushButton" name="pb_i15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3453,8 +3405,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="6" column="7">
-                <widget class="QPushButton" name="pb_h10">
+               <item row="10" column="14">
+                <widget class="QPushButton" name="pb_o6">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3485,8 +3437,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="7" column="5">
-                <widget class="QPushButton" name="pb_f9">
+               <item row="4" column="4">
+                <widget class="QPushButton" name="pb_e12">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3517,8 +3469,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="3">
-                <widget class="QPushButton" name="pb_d4">
+               <item row="6" column="7">
+                <widget class="QPushButton" name="pb_h10">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3533,24 +3485,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="11" column="3">
-                <widget class="QPushButton" name="pb_d5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="6" column="8">
-                <widget class="QPushButton" name="pb_i10">
+               <item row="7" column="5">
+                <widget class="QPushButton" name="pb_f9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3581,8 +3517,56 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="6" column="8">
+                <widget class="QPushButton" name="pb_i10">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="12" column="3">
+                <widget class="QPushButton" name="pb_d4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="12" column="14">
                 <widget class="QPushButton" name="pb_o4">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="11" column="3">
+                <widget class="QPushButton" name="pb_d5">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3613,8 +3597,40 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="15" column="5">
+                <widget class="QPushButton" name="pb_f1">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>0601w21</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="9" column="1">
                 <widget class="QPushButton" name="pb_b7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="7" column="7">
+                <widget class="QPushButton" name="pb_h9">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3645,24 +3661,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="15" column="5">
-                <widget class="QPushButton" name="pb_f1">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>0601w21</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="7" column="7">
-                <widget class="QPushButton" name="pb_h9">
+               <item row="9" column="7">
+                <widget class="QPushButton" name="pb_h7">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3671,6 +3671,22 @@
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="4" column="7">
+                <widget class="QPushButton" name="pb_h12">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3679,22 +3695,6 @@
                </item>
                <item row="5" column="9">
                 <widget class="QPushButton" name="pb_j11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="14" column="7">
-                <widget class="QPushButton" name="pb_h2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3725,8 +3725,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="4" column="7">
-                <widget class="QPushButton" name="pb_h12">
+               <item row="14" column="7">
+                <widget class="QPushButton" name="pb_h2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3734,15 +3734,15 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>b</string>
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
                  </attribute>
                 </widget>
                </item>
-               <item row="9" column="7">
-                <widget class="QPushButton" name="pb_h7">
+               <item row="14" column="8">
+                <widget class="QPushButton" name="pb_i2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3767,6 +3767,22 @@
                  </property>
                  <property name="text">
                   <string>1003w11</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="2" column="8">
+                <widget class="QPushButton" name="pb_i14">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3805,24 +3821,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="2" column="8">
-                <widget class="QPushButton" name="pb_i14">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="14" column="8">
-                <widget class="QPushButton" name="pb_i2">
+               <item row="2" column="15">
+                <widget class="QPushButton" name="pb_p14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3853,8 +3853,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="6" column="5">
-                <widget class="QPushButton" name="pb_f10">
+               <item row="1" column="6">
+                <widget class="QPushButton" name="pb_g15">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3862,7 +3862,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>b</string>
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3885,8 +3885,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="2" column="15">
-                <widget class="QPushButton" name="pb_p14">
+               <item row="6" column="5">
+                <widget class="QPushButton" name="pb_f10">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -3894,23 +3894,7 @@
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="1" column="6">
-                <widget class="QPushButton" name="pb_g15">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
+                  <string>b</string>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
@@ -3965,22 +3949,6 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="0" column="15">
-                <widget class="QPushButton" name="pb_p16">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>p16b</string>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="0" column="2">
                 <widget class="QPushButton" name="pb_c16">
                  <property name="sizePolicy">
@@ -3997,8 +3965,40 @@
                  </attribute>
                 </widget>
                </item>
+               <item row="0" column="15">
+                <widget class="QPushButton" name="pb_p16">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>p16b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
                <item row="2" column="2">
                 <widget class="QPushButton" name="pb_c14">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="12" column="1">
+                <widget class="QPushButton" name="pb_b4">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -4061,56 +4061,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="12" column="1">
-                <widget class="QPushButton" name="pb_b4">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
                <item row="14" column="4">
                 <widget class="QPushButton" name="pb_e2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="5" column="4">
-                <widget class="QPushButton" name="pb_e11">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                 <attribute name="buttonGroup">
-                  <string notr="true">squares</string>
-                 </attribute>
-                </widget>
-               </item>
-               <item row="2" column="0">
-                <widget class="QPushButton" name="pb_a14">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -4141,8 +4093,8 @@
                  </attribute>
                 </widget>
                </item>
-               <item row="13" column="15">
-                <widget class="QPushButton" name="pb_p3">
+               <item row="5" column="4">
+                <widget class="QPushButton" name="pb_e11">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
                    <horstretch>0</horstretch>
@@ -4167,6 +4119,54 @@
                  </property>
                  <property name="text">
                   <string>b</string>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="13" column="15">
+                <widget class="QPushButton" name="pb_p3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="pb_a14">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <attribute name="buttonGroup">
+                  <string notr="true">squares</string>
+                 </attribute>
+                </widget>
+               </item>
+               <item row="14" column="13">
+                <widget class="QPushButton" name="pb_n2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
                  </property>
                  <attribute name="buttonGroup">
                   <string notr="true">squares</string>
