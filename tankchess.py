@@ -219,6 +219,7 @@ class TankChess(QMainWindow, Tank_chess):
 
         x = int(''.join([self.now.text()[x] for x in range(2) if x == 1 or self.now.text()[x] != '0']))
         y = int(''.join([self.now.text()[x + 2] for x in range(2) if x == 1 or self.now.text()[x + 2] != '0']))
+        #
 
         if int(self.now.text()[6]) - 1 == 0:
             self.direc = '8'
