@@ -58,7 +58,7 @@ class TankChess(QMainWindow):
                       '1009': self.pb_j9, '1010': self.pb_j10, '1011': self.pb_j11, '1012': self.pb_j12,
                       '1013': self.pb_j13, '1014': self.pb_j14, '1015': self.pb_j15, '1016': self.pb_j16,
                       '1101': self.pb_k1, '1102': self.pb_k2, '1103': self.pb_k3, '1104': self.pb_k4,
-                      '1105': self.pb_k5, '1106': self.pb_k6, '107': self.pb_k7, '1108': self.pb_k8,
+                      '1105': self.pb_k5, '1106': self.pb_k6, '1107': self.pb_k7, '1108': self.pb_k8,
                       '1109': self.pb_k9, '1110': self.pb_k10, '1111': self.pb_k11, '1112': self.pb_k12,
                       '1113': self.pb_k13, '1114': self.pb_k14, '1115': self.pb_k15, '1116': self.pb_k16,
                       '1201': self.pb_l1, '1202': self.pb_l2, '1203': self.pb_l3, '1204': self.pb_l4,
@@ -133,6 +133,9 @@ class TankChess(QMainWindow):
             # если танк ничего не делал в ходу,
             self.now.setStyleSheet('')  # то очищаем выбор
             self.now = self.rules
+            for i in self.visible_enemy:
+                i.setStyleSheet('')
+            self.visible_enemy.clear()
             if self.sender().text() != '' and self.sender().text()[4] == self.turn:  # если нажата не пустая клетка,
                 self.now = self.sender()  # и это танк игрока, то сохраняем название кнопки и выделяем её цветом
                 self.now.setStyleSheet('background-color: rgb(228, 230, 78)')
@@ -204,7 +207,7 @@ class TankChess(QMainWindow):
                 if ok_pressed:
                     ex.close()
 
-    def visible(self):
+    def visible(self, enemy=''):
         for i in self.visible_enemy:
             i.setStyleSheet('')
         self.visible_enemy.clear()
@@ -216,6 +219,8 @@ class TankChess(QMainWindow):
             self.direc = '8'
         else:
             self.direc = str(int(self.now.text()[6]) - 1)
+
+        f = False
         for i in range(1, 4):
             new_x = x
             new_y = y
@@ -236,16 +241,20 @@ class TankChess(QMainWindow):
                         and self.board[new_x + new_y].text()[6] != '0' and j:
                     self.board[new_x + new_y].setStyleSheet('background-color: rgb(255, 0, 8)')
                     self.visible_enemy.append(self.board[new_x + new_y])
+                    if enemy == self.board[new_x + new_y]:
+                        f = True
                 if self.board[new_x + new_y].text()[4] != '0':
                     break
                 j = True
+            if f:
+                break
             if int(self.direc) + 1 == 9 and i != 3:
                 self.direc = '1'
             elif i != 3:
                 self.direc = str(int(self.direc) + 1)
 
     def canon_fire(self):
-        # баг с self.direc
+        self.visible(self.sender())
         if abs(int(self.sender().text()[6]) - int(self.direc)) == 4:
             hit = TANKS_DESCRIPTION[self.now.text()[5]][2] - TANKS_DESCRIPTION[self.sender().text()[5]][1][0]
         elif self.sender().text()[6] == self.direc:
