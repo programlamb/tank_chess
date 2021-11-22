@@ -1,10 +1,11 @@
 import sys
 
-from PyQt5 import uic
 from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import QInputDialog
+from board import Tank_chess
+from rule import Rules
 
 
 TANKS_DESCRIPTION = {'1': [5, (1, 0, 0), 1, 3, 2], '2': [4, (2, 1, 0), 2, 3, 2], '3': [3, (3, 2, 1), 3, 3, 2],
@@ -13,10 +14,10 @@ TRANSFORM_ROTATE = {'1': [(0, 1), ''], '2': [(1, 1), ''], '3': [(1, 0), ''], '4'
                     '6': [(-1, -1), ''], '7': [(-1, 0), ''], '8': [(-1, 1), '']}
 
 
-class TankChess(QMainWindow):
+class TankChess(QMainWindow, Tank_chess):
     def __init__(self):
         super(TankChess, self).__init__()
-        uic.loadUi('des.ui', self)
+        self.setupUi(self)
         self.board = {'0101': self.pb_a1, '0102': self.pb_a2, '0103': self.pb_a3, '0104': self.pb_a4,
                       '0105': self.pb_a5, '0106': self.pb_a6, '0107': self.pb_a7, '0108': self.pb_a8,
                       '0109': self.pb_a9, '0110': self.pb_a10, '0111': self.pb_a11, '0112': self.pb_a12,
@@ -81,6 +82,7 @@ class TankChess(QMainWindow):
                       '1605': self.pb_p5, '1606': self.pb_p6, '1607': self.pb_p7, '1608': self.pb_p8,
                       '1609': self.pb_p9, '1610': self.pb_p10, '1611': self.pb_p11, '1612': self.pb_p12,
                       '1613': self.pb_p13, '1614': self.pb_p14, '1615': self.pb_p15, '1616': self.pb_p16}
+        # словарь координат кнопок и их обЪектов для обращения
 
         self.now = self.rules  # выбрана стандартная кнопка
         self.visible_enemy = []
@@ -108,11 +110,12 @@ class TankChess(QMainWindow):
 
     def end_turn(self):
         if self.now != self.rules and self.action_points != TANKS_DESCRIPTION[self.now.text()[5]][0]:
+            # если танк выбран и он что-то сделал в ходу
             for i in self.visible_enemy:
-                i.setStyleSheet('')
+                i.setStyleSheet('')  # очищаем видимых врагов
             self.visible_enemy.clear()
             self.now.setStyleSheet('')
-            self.now = self.rules
+            self.now = self.rules  # очищаем выбор танка
             if self.turn == 'w':
                 self.turn = 'b'
             else:
@@ -125,7 +128,7 @@ class TankChess(QMainWindow):
             # если выбрана стандартная кнопка, и если нажата не пустая клетка, не преграда и это танк игрока,
             self.now = self.sender()  # то сохраняем название кнопки и выделяем её цветом
             self.now.setStyleSheet('background-color: rgb(228, 230, 78)')
-            self.visible()
+            self.visible()  #
 
             self.action_points = TANKS_DESCRIPTION[self.sender().text()[5]][0]
         elif self.now != self.rules and self.action_points == TANKS_DESCRIPTION[self.now.text()[5]][0]\
@@ -163,10 +166,11 @@ class TankChess(QMainWindow):
     def riding(self, direction):
         x = ''.join([self.now.text()[x] for x in range(2) if x == 1 or self.now.text()[x] != '0'])
         y = ''.join([self.now.text()[x + 2] for x in range(2) if x == 1 or self.now.text()[x + 2] != '0'])
+        # узнаём начальные координаты танка в str без 0
 
         if direction == 'up':
             new_x = str(int(x) + TRANSFORM_ROTATE[self.now.text()[6]][0][0])
-            new_y = str(int(y) + TRANSFORM_ROTATE[self.now.text()[6]][0][1])
+            new_y = str(int(y) + TRANSFORM_ROTATE[self.now.text()[6]][0][1])  # вычисляем новые координаты
         elif self.action_points == TANKS_DESCRIPTION[self.now.text()[5]][0]:
             new_x = str(int(x) - TRANSFORM_ROTATE[self.now.text()[6]][0][0])
             new_y = str(int(y) - TRANSFORM_ROTATE[self.now.text()[6]][0][1])
@@ -178,9 +182,10 @@ class TankChess(QMainWindow):
             x, y = new_x, new_y
             if len(new_x) == 1:
                 x = '0' + new_x
-            if len(new_y) == 1:
+            if len(new_y) == 1:  # добавляем нули обратно
                 y = '0' + new_y
         if int(new_x) in range(1, 17) and int(new_y) in range(1, 17) and self.board[x + y].text()[4] == '0':
+            # проверяем координаты на правильность
             if len(new_x) == 1:
                 new_x = '0' + new_x
             if len(new_y) == 1:
@@ -188,7 +193,7 @@ class TankChess(QMainWindow):
 
             self.board[new_x + new_y].setText(new_x + new_y + self.now.text()[4:])
             self.now.setText(self.now.text()[:4] + '000')
-            self.now.setStyleSheet('')
+            self.now.setStyleSheet('')  # обновляем значения кнопок
             self.now = self.board[new_x + new_y]
             self.now.setStyleSheet('background-color: rgb(228, 230, 78)')
 
@@ -217,17 +222,18 @@ class TankChess(QMainWindow):
 
         if int(self.now.text()[6]) - 1 == 0:
             self.direc = '8'
-        else:
+        else:  #
             self.direc = str(int(self.now.text()[6]) - 1)
 
         f = False
-        for i in range(1, 4):
+        for i in range(3):
             new_x = x
             new_y = y
             j = False
             while i:
                 new_x = str(int(new_x) + TRANSFORM_ROTATE[self.direc][0][0])
                 new_y = str(int(new_y) + TRANSFORM_ROTATE[self.direc][0][1])
+                #
 
                 if int(new_x) not in range(1, 17) or int(new_y) not in range(1, 17):
                     break
@@ -248,9 +254,9 @@ class TankChess(QMainWindow):
                 j = True
             if f:
                 break
-            if int(self.direc) + 1 == 9 and i != 3:
+            if int(self.direc) + 1 == 9:
                 self.direc = '1'
-            elif i != 3:
+            else:
                 self.direc = str(int(self.direc) + 1)
 
     def canon_fire(self):
@@ -275,10 +281,10 @@ class TankChess(QMainWindow):
         self.end_turn()
 
 
-class Rule(QMainWindow):
+class Rule(QMainWindow, Rules):
     def __init__(self):
         super(Rule, self).__init__()
-        uic.loadUi('rules_des.ui', self)
+        self.setupUi(self)
 
         self.name = './pic/rules_0.png'  # задаём путь к первой картинке
         im = QPixmap(self.name)
