@@ -1,2 +1,2 @@
-Python == 3.9
-PyQt5 == 5.15.4
+Python==3.9
+PyQt5==5.15.4
