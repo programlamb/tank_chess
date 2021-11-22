@@ -1,9 +1,10 @@
 import sys
 
 from PyQt5 import uic
-from PyQt5.QtGui import QPixmap, QIcon
+from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QInputDialog
 
 
 TANKS_DESCRIPTION = {'1': [5, (1, 0, 0), 1, 3, 2], '2': [4, (2, 1, 0), 2, 3, 2], '3': [3, (3, 2, 1), 3, 3, 2],
@@ -82,11 +83,12 @@ class TankChess(QMainWindow):
                       '1613': self.pb_p13, '1614': self.pb_p14, '1615': self.pb_p15, '1616': self.pb_p16}
 
         self.now = self.rules  # выбрана стандартная кнопка
+        self.visible_enemy = []
         self.turn = 'w'  # ход игрока white
         self.action_points = 0
 
         self.rules.clicked.connect(self.rule)
-        self.fire.clicked.connect(self.canon_fire)  # реакции на нажатие кнопок
+        self.end.clicked.connect(self.end_turn)  # реакции на нажатие кнопок
         [i.clicked.connect(self.choice) for i in self.squares.buttons()]
 
     def keyPressEvent(self, event):  # реакции на нажатие кнопок клавиатуры
@@ -99,14 +101,31 @@ class TankChess(QMainWindow):
             if event.key() == Qt.Key_Up or event.key() == Qt.Key_W:
                 self.riding('up')
             if event.key() == Qt.Key_Down or event.key() == Qt.Key_S:
-                self.riding_back('back')
+                self.riding('back')
+
+            if event.key() == Qt.Key_Space or event.key() == Qt.Key_Enter:
+                self.end_turn()
+
+    def end_turn(self):
+        if self.now != self.rules and self.action_points != TANKS_DESCRIPTION[self.now.text()[5]][0]:
+            for i in self.visible_enemy:
+                i.setStyleSheet('')
+            self.visible_enemy.clear()
+            self.now.setStyleSheet('')
+            self.now = self.rules
+            if self.turn == 'w':
+                self.turn = 'b'
+            else:
+                self.turn = 'w'
 
     def choice(self):
-        if self.now == self.rules and self.sender().text() != '' and self.sender().text()[4] == self.turn\
-                and self.sender().text()[-1] != '0':
+        if self.sender() in self.visible_enemy and self.action_points != TANKS_DESCRIPTION[self.now.text()[5]][0]:
+            self.canon_fire()
+        elif self.now == self.rules and self.sender().text()[4] == self.turn and self.sender().text()[-1] != '0':
             # если выбрана стандартная кнопка, и если нажата не пустая клетка, не преграда и это танк игрока,
             self.now = self.sender()  # то сохраняем название кнопки и выделяем её цветом
             self.now.setStyleSheet('background-color: rgb(228, 230, 78)')
+            self.visible()
 
             self.action_points = TANKS_DESCRIPTION[self.sender().text()[5]][0]
         elif self.now != self.rules and self.action_points == TANKS_DESCRIPTION[self.now.text()[5]][0]\
@@ -118,6 +137,7 @@ class TankChess(QMainWindow):
                 self.now = self.sender()  # и это танк игрока, то сохраняем название кнопки и выделяем её цветом
                 self.now.setStyleSheet('background-color: rgb(228, 230, 78)')
                 self.action_points = TANKS_DESCRIPTION[self.sender().text()[5]][0]
+                self.visible()
 
     def rule(self):
         self.win = Rule()  # создаём объект класса Rule
@@ -129,28 +149,35 @@ class TankChess(QMainWindow):
                 self.now.setText(self.now.text()[:6] + '8')
             else:
                 self.now.setText(self.now.text()[:6] + str(int(self.now.text()[6]) - 1))
-            self.action_points -= 1
-            '''
-            self.now.setIcon(QIcon(''))
-            '''
         elif direction == 'right':  # если нажата кнопка поворот на право
             if int(self.now.text()[6]) + 1 == 9:
                 self.now.setText(self.now.text()[:6] + '1')
             else:
                 self.now.setText(self.now.text()[:6] + str(int(self.now.text()[6]) + 1))
-            self.action_points -= 1
+        self.action_points -= 1
+        self.visible()
 
     def riding(self, direction):
-        x = int(''.join([self.now.text()[x] for x in range(2) if x == 1 or self.now.text()[x] != '0']))
-        y = int(''.join([self.now.text()[x + 2] for x in range(2) if x == 1 or self.now.text()[x + 2] != '0']))
+        x = ''.join([self.now.text()[x] for x in range(2) if x == 1 or self.now.text()[x] != '0'])
+        y = ''.join([self.now.text()[x + 2] for x in range(2) if x == 1 or self.now.text()[x + 2] != '0'])
 
         if direction == 'up':
-            new_x = str(x + TRANSFORM_ROTATE[self.now.text()[6]][0][0])
-            new_y = str(y + TRANSFORM_ROTATE[self.now.text()[6]][0][1])
+            new_x = str(int(x) + TRANSFORM_ROTATE[self.now.text()[6]][0][0])
+            new_y = str(int(y) + TRANSFORM_ROTATE[self.now.text()[6]][0][1])
+        elif self.action_points == TANKS_DESCRIPTION[self.now.text()[5]][0]:
+            new_x = str(int(x) - TRANSFORM_ROTATE[self.now.text()[6]][0][0])
+            new_y = str(int(y) - TRANSFORM_ROTATE[self.now.text()[6]][0][1])
         else:
-            new_x = str(x - TRANSFORM_ROTATE[self.now.text()[6]][0][0])
-            new_y = str(y - TRANSFORM_ROTATE[self.now.text()[6]][0][1])
-        if int(new_x) in range(1, 17) and int(new_y) in range(1, 17) and self.now.text()[4] == '0':
+            new_x = False
+            new_y = False
+
+        if new_x:
+            x, y = new_x, new_y
+            if len(new_x) == 1:
+                x = '0' + new_x
+            if len(new_y) == 1:
+                y = '0' + new_y
+        if int(new_x) in range(1, 17) and int(new_y) in range(1, 17) and self.board[x + y].text()[4] == '0':
             if len(new_x) == 1:
                 new_x = '0' + new_x
             if len(new_y) == 1:
@@ -166,17 +193,77 @@ class TankChess(QMainWindow):
                 self.action_points -= 1
             elif direction == 'back':
                 self.action_points = 0
+            self.visible()
+
+            if self.now.text()[4] == '4' and self.turn == 'w' and self.now.text()[2:4] == '16':
+                name, ok_pressed = QInputDialog.getText(self, 'Белый игрок выиграл!', 'Введите имя для доски почёта:')
+                if ok_pressed:
+                    ex.close()
+            elif self.now.text()[4] == '4' and self.turn == 'b' and self.now.text()[2:4] == '01':
+                name, ok_pressed = QInputDialog.getText(self, 'Чёрный игрок выиграл!', 'Введите имя для доски почёта:')
+                if ok_pressed:
+                    ex.close()
 
     def visible(self):
-        pass
+        for i in self.visible_enemy:
+            i.setStyleSheet('')
+        self.visible_enemy.clear()
+
+        x = int(''.join([self.now.text()[x] for x in range(2) if x == 1 or self.now.text()[x] != '0']))
+        y = int(''.join([self.now.text()[x + 2] for x in range(2) if x == 1 or self.now.text()[x + 2] != '0']))
+
+        if int(self.now.text()[6]) - 1 == 0:
+            self.direc = '8'
+        else:
+            self.direc = str(int(self.now.text()[6]) - 1)
+        for i in range(1, 4):
+            new_x = x
+            new_y = y
+            j = False
+            while i:
+                new_x = str(int(new_x) + TRANSFORM_ROTATE[self.direc][0][0])
+                new_y = str(int(new_y) + TRANSFORM_ROTATE[self.direc][0][1])
+
+                if int(new_x) not in range(1, 17) or int(new_y) not in range(1, 17):
+                    break
+
+                if len(new_x) == 1:
+                    new_x = '0' + new_x
+                if len(new_y) == 1:
+                    new_y = '0' + new_y
+
+                if self.board[new_x + new_y].text()[4] != self.turn\
+                        and self.board[new_x + new_y].text()[6] != '0' and j:
+                    self.board[new_x + new_y].setStyleSheet('background-color: rgb(255, 0, 8)')
+                    self.visible_enemy.append(self.board[new_x + new_y])
+                if self.board[new_x + new_y].text()[4] != '0':
+                    break
+                j = True
+            if int(self.direc) + 1 == 9 and i != 3:
+                self.direc = '1'
+            elif i != 3:
+                self.direc = str(int(self.direc) + 1)
 
     def canon_fire(self):
-        self.now.setStyleSheet('')
-        self.now = self.rules
-        if self.turn == 'w':
-            self.turn = 'b'
+        # баг с self.direc
+        if abs(int(self.sender().text()[6]) - int(self.direc)) == 4:
+            hit = TANKS_DESCRIPTION[self.now.text()[5]][2] - TANKS_DESCRIPTION[self.sender().text()[5]][1][0]
+        elif self.sender().text()[6] == self.direc:
+            hit = TANKS_DESCRIPTION[self.now.text()[5]][2] - TANKS_DESCRIPTION[self.sender().text()[5]][1][2]
         else:
-            self.turn = 'w'
+            hit = TANKS_DESCRIPTION[self.now.text()[5]][2] - TANKS_DESCRIPTION[self.sender().text()[5]][1][1]
+        if hit > 0:
+            if self.sender().text()[4] == '4':
+                if self.turn == 'w':
+                    message = 'Белый игрок выиграл!'
+                else:
+                    message = 'Чёрный игрок выиграл!'
+                name, ok_pressed = QInputDialog.getText(self, message, 'Введите имя для доски почёта:')
+                if ok_pressed:
+                    ex.close()
+            self.sender().setText(self.sender().text()[:4] + 'b00')
+
+        self.end_turn()
 
 
 class Rule(QMainWindow):
