@@ -4,8 +4,8 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from PyQt5.QtWidgets import QInputDialog
-from tank_chess.dist.board import Tank_chess
-from tank_chess.dist.rule import Rules
+from board import Tank_chess
+from rule import Rules
 
 
 TANKS_DESCRIPTION = {'1': [5, (1, 0, 0), 1, 3, 2], '2': [4, (2, 1, 0), 2, 3, 2], '3': [3, (3, 2, 1), 3, 3, 2],
