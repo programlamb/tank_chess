@@ -203,11 +203,11 @@ class TankChess(QMainWindow, Tank_chess):
                 self.action_points = 0
             self.visible()
 
-            if self.now.text()[4] == '4' and self.turn == 'w' and self.now.text()[2:4] == '16':
+            if self.now.text()[5] == '4' and self.turn == 'w' and self.now.text()[2:4] == '16':
                 name, ok_pressed = QInputDialog.getText(self, 'Белый игрок выиграл!', 'Введите имя для доски почёта:')
                 if ok_pressed:
                     ex.close()
-            elif self.now.text()[4] == '4' and self.turn == 'b' and self.now.text()[2:4] == '01':
+            elif self.now.text()[5] == '4' and self.turn == 'b' and self.now.text()[2:4] == '01':
                 name, ok_pressed = QInputDialog.getText(self, 'Чёрный игрок выиграл!', 'Введите имя для доски почёта:')
                 if ok_pressed:
                     ex.close()
@@ -269,7 +269,7 @@ class TankChess(QMainWindow, Tank_chess):
         else:
             hit = TANKS_DESCRIPTION[self.now.text()[5]][2] - TANKS_DESCRIPTION[self.sender().text()[5]][1][1]
         if hit > 0:
-            if self.sender().text()[4] == '4':
+            if self.sender().text()[5] == '4':
                 if self.turn == 'w':
                     message = 'Белый игрок выиграл!'
                 else:
